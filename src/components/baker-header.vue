@@ -1,8 +1,6 @@
 <template>
     <header>
       <baker-header-nav/>
-
-
     </header>
 </template>
 
@@ -17,12 +15,11 @@ export default {
 }
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
   header
     width: 100%
     height: 100vh
     display: flex
     flex-direction: column
     align-items: center
-
 </style>

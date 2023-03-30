@@ -1,18 +1,12 @@
 <template>
   <div class="front">
     <baker-header/>
-    <div class="content">
-      <div class="advantages">
-      <div class="advantages-image"></div>
-        <div class="advantages-text"> <h5>Свежеиспеченные продукты: мы готовим свежее хлебобулочные изделия каждый день, что значительно повышает их качество по сравнению с продуктами, которые можно купить в супермаркетах. </h5>
-        <h5>Большой выбор: предлагаем широкий ассортимент хлебобулочных изделий, включая хлеб, булочки, пирожные, торты, печенье и многое другое. Это позволяет выбрать изделие, которое наиболее подходит для вашего вкуса и потребностей.</h5>
-        <h5>Качество ингредиентов:  как правило, используем высококачественные ингредиенты, такие как мука высшего сорта, свежие яйца, настоящее масло и т.д. Это позволяет получить продукты высокого качества.</h5>
-        <h5>Альтернатива здоровому питанию: предлагаем альтернативу здоровому питанию, такую как безглютеновые или безлактозные продукты, которые подходят для людей с определенными потребностями в питании.</h5>
-        </div>
-      </div>
-    </div>
 
+    <div class="content">
+      <mainAdvantages/>
+    </div>
   </div>
+
   <div class="parallax-deep parallax-deep1"></div>
   <div class="parallax-deep parallax-deep2"></div>
   <div class="parallax-deep parallax-deep3"></div>
@@ -20,11 +14,13 @@
 
 <script>
 import bakerHeader from "@/components/baker-header";
+import mainAdvantages from "@/components/main-content/main-advantages";
 
 export default {
   name: 'App',
   components: {
-    bakerHeader
+    bakerHeader,
+    mainAdvantages
   }
 }
 </script>
@@ -42,11 +38,16 @@ export default {
       position: absolute
       width: 100%
       transform: translateZ(0)
+      display: flex
+      flex-direction: column
+
       .content
-        height: 100vh
-        background-color: #131119
         padding-top: 100px
-        padding-left: 10%
+        height: 100vh
+        display: flex
+        flex-direction: column
+        align-items: center
+        background-color: #131119
 
     .parallax-deep
       overflow: hidden
@@ -71,13 +72,4 @@ export default {
         background-image: url("/src/assets/images/parallax/main.png")
         z-index: -3
         +background-image-settings(cover, no-reepat, right center)
-    .advantages-image
-      background-image: url("/src/assets/images/advantage-image.jpg")
-      width: 300px
-      height: 350px
-      +background-image-settings()
-      display: flex
-    .advantages
-      display: flex
-
 </style>
