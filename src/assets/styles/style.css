@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "Roboto Mono";
+  src: local("Roboto Mono"), local("Roboto-Bold"), url("/src/assets/fonts/RobotoMono-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Mono";
+  src: local("Roboto Mono"), local("Roboto-Medium"), url("/src/assets/fonts/RobotoMono-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Mono";
+  src: local("Roboto Mono"), local("Roboto-Regular"), url("/src/assets/fonts/RobotoMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+h1 {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+h3 {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+h4 {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+h5 {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+h6 {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-underline: none;
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+img {
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+:root {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
