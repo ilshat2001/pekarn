@@ -30,5 +30,16 @@ export default {
     +background-image-settings()
     width: 100px
     height: 100px
-    background-color: red
+
+.products-pies
+  background-image: url("/src/assets/images/icons/pies.png")
+  +background-image-settings()
+  width: 80px
+  height: 80px
+.products-conditers
+  background-image: url("/src/assets/images/icons/conditer.png")
+  +background-image-settings()
+  width: 80px
+  height: 80px
+
 </style>
