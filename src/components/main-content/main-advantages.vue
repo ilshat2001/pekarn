@@ -54,6 +54,7 @@ export default {
     flex-direction: column
     align-items: center
     gap: 50px
+    color: #FEC262
 
     .advantage-item-content
       display: flex
@@ -71,6 +72,7 @@ export default {
         display: flex
         flex-direction: column
         gap: 50px
+        color: #FEC262
 
         .advantage
           display: flex

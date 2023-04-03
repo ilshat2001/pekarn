@@ -4,6 +4,7 @@
 
     <div class="content">
       <mainAdvantages/>
+      <main-produkts/>
     </div>
   </div>
 
@@ -15,10 +16,12 @@
 <script>
 import bakerHeader from "@/components/baker-header";
 import mainAdvantages from "@/components/main-content/main-advantages";
+import MainProdukts from "@/components/main-content/main-produkts";
 
 export default {
   name: 'App',
   components: {
+    MainProdukts,
     bakerHeader,
     mainAdvantages
   }
