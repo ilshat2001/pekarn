@@ -37,7 +37,7 @@ export default {
     overflow-y: auto
 
     .front
-      z-index: 2
+      z-index: 999
       position: absolute
       width: 100%
       transform: translateZ(0)
