@@ -41,13 +41,11 @@ export default {
 <style lang="sass">
 .main-products
   display: flex
-  padding-top: 100px
   color: $ren
 
 .products-images
   display: flex
   justify-content: space-between
-  padding-top: 50px
   width: 100%
   color: $ren
   .product

@@ -5,6 +5,7 @@
     <div class="content">
       <mainAdvantages/>
       <main-products/>
+      <main-map/>
     </div>
   </div>
 
@@ -17,10 +18,12 @@
 import bakerHeader from "@/components/baker-header";
 import mainAdvantages from "@/components/main-content/main-advantages";
 import MainProducts from "@/components/main-content/main-products";
+import MainMap from "@/components/main-content/main-map";
 
 export default {
   name: 'App',
   components: {
+    MainMap,
     MainProducts,
     bakerHeader,
     mainAdvantages
@@ -51,6 +54,7 @@ export default {
         flex-direction: column
         align-items: center
         background-color: #131119
+        gap: 100px
 
     .parallax-deep
       overflow: hidden
