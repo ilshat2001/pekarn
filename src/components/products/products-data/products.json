@@ -1,0 +1,36 @@
+[
+  {
+    "imageName": "vegipan.jpg",
+    "name": "Вегипан",
+    "description": "Это хлеб с тупым названием",
+    "type": "Bread"
+  },
+
+  {
+    "imageName": "potatoBread.jpg",
+    "name": "Картофельный хлеб",
+    "description": "Хлеб из картошки",
+    "type": "Vipechka"
+  },
+
+  {
+    "imageName": "1.jpg",
+    "name": "Хлеб №1",
+    "description": "Первый хлеб",
+    "type": "Konditer"
+  },
+
+  {
+    "imageName": "2.jpg",
+    "name": "Хлеб №2",
+    "description": "Второй хлеб",
+    "type": "Pirogi"
+  },
+
+  {
+    "imageName": "3.jpg",
+    "name": "Хлеб №3",
+    "description": "Третий хлеб",
+    "type": "Bread"
+  }
+]

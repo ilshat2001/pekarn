@@ -1,17 +1,11 @@
 <template>
     <header>
-      <baker-header-nav/>
     </header>
 </template>
 
 <script>
-import bakerHeaderNav from "@/components/header/baker-header-nav";
-
 export default {
   name: "baker-header",
-  components: {
-    bakerHeaderNav
-  }
 }
 </script>
 

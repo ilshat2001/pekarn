@@ -1,12 +1,7 @@
 <template>
   <div class="front">
-    <baker-header/>
-
-    <div class="content">
-      <mainAdvantages/>
-      <main-products/>
-      <main-map/>
-    </div>
+    <baker-header-nav/>
+    <router-view/>
   </div>
 
   <div class="parallax-deep parallax-deep1"></div>
@@ -15,18 +10,12 @@
 </template>
 
 <script>
-import bakerHeader from "@/components/baker-header";
-import mainAdvantages from "@/components/main-content/main-advantages";
-import MainProducts from "@/components/main-content/main-products";
-import MainMap from "@/components/main-content/main-map";
+import bakerHeaderNav from "@/components/header/baker-header-nav";
 
 export default {
   name: 'App',
   components: {
-    MainMap,
-    MainProducts,
-    bakerHeader,
-    mainAdvantages
+    bakerHeaderNav
   }
 }
 </script>
@@ -46,15 +35,7 @@ export default {
       transform: translateZ(0)
       display: flex
       flex-direction: column
-
-      .content
-        padding-top: 100px
-        height: 100vh
-        display: flex
-        flex-direction: column
-        align-items: center
-        background-color: #131119
-        gap: 100px
+      align-items: center
 
     .parallax-deep
       overflow: hidden
