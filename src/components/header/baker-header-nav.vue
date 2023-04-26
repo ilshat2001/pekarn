@@ -54,12 +54,12 @@ export default {
   nav
     display: flex
     align-items: center
-    justify-content: space-between
     padding-left: 50px
     padding-right: 50px
     width: 100%
     max-width: 900px
     z-index: 2
+    gap: 50px
 
     @media (max-width: 1080px)  // phone
       display: none
@@ -69,7 +69,12 @@ export default {
 
     .header-nav
       display: flex
-      gap: 50px
+      gap: 30px
+      width: 100%
+      flex: 1
+
+      &:last-of-type
+        justify-content: flex-end
 
       .header-nav-item
         hr
