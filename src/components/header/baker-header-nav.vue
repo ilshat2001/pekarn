@@ -26,7 +26,11 @@
 
     <ul class="header-nav">
       <li class="header-nav-item">
-        <h5><a class="header-nav-link">ВАКАНСИИ</a></h5>
+        <h5>
+          <router-link to="/vacancies" class="header-nav-link">
+            ВАКАНСИИ
+          </router-link>
+        </h5>
       </li>
 
       <li class="header-nav-item">
