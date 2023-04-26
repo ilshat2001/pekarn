@@ -33,11 +33,12 @@ export default {
   top: -100px
 
   .content
-    padding-top: 100px
     height: 100vh
     display: flex
     flex-direction: column
     align-items: center
     background-color: #131119
     gap: 100px
+    width: 100%
+    padding: 100px calc((100% - 1880px) / 2) 0
 </style>

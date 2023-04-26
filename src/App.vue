@@ -1,7 +1,7 @@
 <template>
   <div class="front">
     <baker-header-nav/>
-    <router-view/>
+    <router-view class="front-content"/>
   </div>
 
   <div class="parallax-deep parallax-deep1"></div>
@@ -36,6 +36,9 @@ export default {
       display: flex
       flex-direction: column
       align-items: center
+
+      .front-content
+        width: 100%
 
     .parallax-deep
       overflow: hidden
