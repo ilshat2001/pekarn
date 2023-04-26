@@ -10,21 +10,21 @@
     "imageName": "potatoBread.jpg",
     "name": "Картофельный хлеб",
     "description": "Хлеб из картошки",
-    "type": "Vipechka"
+    "type": "Bread"
   },
 
   {
     "imageName": "1.jpg",
     "name": "Хлеб №1",
     "description": "Первый хлеб",
-    "type": "Konditer"
+    "type": "Bread"
   },
 
   {
     "imageName": "2.jpg",
     "name": "Хлеб №2",
     "description": "Второй хлеб",
-    "type": "Pirogi"
+    "type": "Bread"
   },
 
   {
@@ -32,5 +32,41 @@
     "name": "Хлеб №3",
     "description": "Третий хлеб",
     "type": "Bread"
+  },
+
+  {
+    "imageName": "chiz.jpg",
+    "name": "Чизкейк",
+    "description": "Блюдо европейской и американской кухни, представляющее собой сыросодержащий десерт от творожной запеканки до суфле.",
+    "type": "Konditer"
+  },
+
+  {
+    "imageName": "kartkurt.jpg",
+    "name": "С картошкой и курицей",
+    "description": "Ароматный, сытный, вкусный, для всей семьи! Пирог с картошкой и курицей в духовке обязательно всем понравится.",
+    "type": "Pirogi"
+  },
+
+  {
+    "imageName": "korica.jpg",
+    "name": "Булочка с корицей",
+    "description": "Мягкие и ароматные витые булочки с корицей, покрытые липкой сахарной глазурью.",
+    "type": "Konditer"
+  },
+
+  {
+    "imageName": "mak.jpg",
+    "name": "Булочка с маком",
+    "description": "Потрясающе нежные дрожжевые булочки, с маком и сахаром..",
+    "type": "Konditer"
+  },
+
+  {
+    "imageName": "qiwi.jpg",
+    "name": "Пирог киви",
+    "description": "Пирог с киви — простая и очень вкусная домашняя выпечка. Мягкое и воздушное тесто, украшенное яркими кусочками киви — вот что это за пирог!",
+    "type": "Pirogi"
   }
+
 ]

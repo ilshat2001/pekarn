@@ -56,6 +56,7 @@ export default {
   ul
     display: flex
     gap: 50px
+    color: $ren
 
     li
       display: flex
