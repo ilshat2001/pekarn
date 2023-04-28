@@ -2,6 +2,7 @@ import {createRouter, createWebHistory} from "vue-router";
 import mainPage from "@/components/main-page";
 import pekarnProducts from "@/components/pekarn-products";
 import pekarnVacancies from "@/components/pekarn-vacancies";
+import pekarnAbout from "@/components/pekarn-about";
 
 export default createRouter({
     history: createWebHistory(),
@@ -30,6 +31,14 @@ export default createRouter({
             component: pekarnVacancies,
             meta: {
                 title: "VACANCIES"
+            },
+        },
+        {
+            path: '/about',
+            name: "about",
+            component: pekarnAbout,
+            meta: {
+                title: "ABOUT"
             },
         },
     ],

@@ -42,6 +42,7 @@ export default {
 .main-products
   display: flex
   color: $ren
+  background-color: $darkblue
 
 .products-images
   display: flex

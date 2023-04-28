@@ -38,7 +38,11 @@
       </li>
 
       <li class="header-nav-item">
-        <h5><a class="header-nav-link">О НАС</a></h5>
+        <h5>
+        <router-link to="/about" class="header-nav-link">
+          О НАС
+        </router-link>
+        </h5>
       </li>
     </ul>
   </nav>

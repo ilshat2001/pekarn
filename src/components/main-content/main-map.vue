@@ -20,6 +20,7 @@ export default {
 
 <style lang="sass">
 .main-map
+  background-color: $darkblue
   display: flex
   color: $ren
   flex-direction: column
