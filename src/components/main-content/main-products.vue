@@ -45,10 +45,18 @@ export default {
   background-color: $darkblue
 
 .products-images
-  display: flex
-  justify-content: space-between
   width: 100%
   color: $ren
+  gap: 50px
+  @media (min-width: $desktopMin) // Desktop
+    display: flex
+    justify-content: space-between
+  @media (max-width: $tabletMax) and (min-width: $tabletMin)  // Table
+    display: flex
+    flex-direction: column
+  @media (max-width: $mobileMax) // Mobile
+    display: flex
+    flex-direction: column
   .product
     display: flex
     flex-direction: column

@@ -59,13 +59,25 @@ export default {
     .advantage-item-content
       display: flex
       gap: 50px
+      @media (min-width: $desktopMin) // Desktop
 
+      @media (max-width: $tabletMax) and (min-width: $tabletMin)  // Table
+
+      @media (max-width: $mobileMax) // Mobile
+      flex-direction: column
       .advantages-image
         background-image: url("/src/assets/images/advantage-image.jpg")
-        width: 400px
-        height: 550px
         +background-image-settings()
         display: flex
+        @media (min-width: $desktopMin) // Desktop
+          width: 400px
+          height: 550px
+        @media (max-width: $tabletMax) and (min-width: $tabletMin)  // Table
+          width: 300px
+          height: 450px
+        @media (max-width: $mobileMax) // Mobile
+          width: 100%
+          height: 350px
 
       .advantages-text
         flex: 1
