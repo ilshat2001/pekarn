@@ -1,5 +1,5 @@
 <template>
-  <div class="front">
+  <div class="front" id="front">
     <baker-header-nav/>
     <router-view class="front-content"/>
   </div>

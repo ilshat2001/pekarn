@@ -12,6 +12,8 @@
 import pekarnProductsFilter from "@/components/products/pekarn-products-filter";
 import pekarnProductsItems from "@/components/products/pekarn-products-items";
 
+import { scrollToTop } from "@/mixins/scrollToTop";
+
 export default {
   name: "pekarn-products",
 
@@ -24,6 +26,10 @@ export default {
     filter() {
       return this.$route.query.filter || null
     }
+  },
+
+  mounted() {
+    scrollToTop()
   }
 }
 </script>
