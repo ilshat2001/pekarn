@@ -21,7 +21,7 @@
           :to="{ path: '/products', query: { filter: navigation.filter }}"
           v-slot="{ navigate }"
       >
-        <h3 @click="navigate">Хлеба</h3>
+        <h3 @click="navigate" class="title">{{ navigation.text }}</h3>
       </router-link>
     </div>
   </div>
@@ -49,7 +49,7 @@ export default {
         {
           filter: "Konditer",
           className: "products-conditers",
-          text: "Кондитерские <br class=\"only-mb\"/>изделия",
+          text: "Кондитерские изделия",
         },
 
         {
@@ -104,11 +104,8 @@ export default {
         width: 100%
         height: 100%
 
-
-
         &.products-breads
           background-image: url("/src/assets/images/icons/loaf.png")
-
 
         &.products-pies
           background-image: url("/src/assets/images/icons/pies.png")
@@ -119,5 +116,10 @@ export default {
         &.products-gateau
           background-image: url("/src/assets/images/icons/pie.png")
 
-
+    .title
+      white-space: break-spaces
+      text-wrap: normal
+      word-break: break-word
+      padding-left: 20px
+      padding-right: 20px
 </style>
