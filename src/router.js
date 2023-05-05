@@ -14,6 +14,10 @@ export default createRouter({
             meta: {
                 title: "PEKARN"
             },
+            props: {
+                default: true,
+                sidebar: false
+            },
         },
 
         {
@@ -22,6 +26,10 @@ export default createRouter({
             component: pekarnProducts,
             meta: {
                 title: "PRODUCTS"
+            },
+            props: {
+                default: true,
+                sidebar: false
             },
         },
 
@@ -32,6 +40,10 @@ export default createRouter({
             meta: {
                 title: "VACANCIES"
             },
+            props: {
+                default: true,
+                sidebar: false
+            },
         },
         {
             path: '/about',
@@ -39,6 +51,10 @@ export default createRouter({
             component: pekarnAbout,
             meta: {
                 title: "ABOUT"
+            },
+            props: {
+                default: true,
+                sidebar: false
             },
         },
     ],

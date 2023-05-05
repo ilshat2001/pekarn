@@ -46,8 +46,18 @@ export default {
   flex-direction: column
   max-width: 1880px
   width: 100%
-  padding-left: 100px
-  padding-right: 100px
+
+  @media (min-width: $desktopMin) // Desktop
+    padding-left: 100px
+    padding-right: 100px
+
+  @media (max-width: $tabletMax) and (min-width: $tabletMin)  // Table
+    padding-left: 32px
+    padding-right: 32px
+
+  @media (max-width: $mobileMax) // Mobile
+    padding-left: 16px
+    padding-right: 16px
 
   .advantage-item
     display: flex
@@ -59,25 +69,31 @@ export default {
     .advantage-item-content
       display: flex
       gap: 50px
+
       @media (min-width: $desktopMin) // Desktop
 
       @media (max-width: $tabletMax) and (min-width: $tabletMin)  // Table
+        align-items: center
 
       @media (max-width: $mobileMax) // Mobile
-      flex-direction: column
+        flex-direction: column
+
       .advantages-image
         background-image: url("/src/assets/images/advantage-image.jpg")
         +background-image-settings()
         display: flex
+
         @media (min-width: $desktopMin) // Desktop
           width: 400px
-          height: 550px
+          height: 100%
+
         @media (max-width: $tabletMax) and (min-width: $tabletMin)  // Table
           width: 300px
-          height: 450px
+          height: 60%
+
         @media (max-width: $mobileMax) // Mobile
           width: 100%
-          height: 350px
+          padding-top: 150%
 
       .advantages-text
         flex: 1
@@ -88,7 +104,18 @@ export default {
 
         .advantage
           display: flex
-          gap: 50px
+
+          @media (min-width: $desktopMin) // Desktop
+            gap: 50px
+
+          @media (max-width: $tabletMax) and (min-width: $tabletMin)  // Table
+            gap: 30px
+
+          @media (max-width: $mobileMax) // Mobile
+            gap: 16px
+            flex-direction: column
+            align-items: center
+            text-align: center
 
           .advantage-icon
             width: 100px

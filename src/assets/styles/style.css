@@ -22,7 +22,21 @@
 h1 {
   font-family: "Roboto Mono", sans-serif;
   font-weight: 700;
-  font-size: 50px;
+}
+@media (min-width: 1280px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 1279px) and (min-width: 768px) {
+  h1 {
+    font-size: 44px;
+  }
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 38px;
+  }
 }
 
 h2 {
@@ -46,7 +60,21 @@ h4 {
 h5 {
   font-family: "Roboto Mono", sans-serif;
   font-weight: 400;
-  font-size: 24px;
+}
+@media (min-width: 1280px) {
+  h5 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1279px) and (min-width: 768px) {
+  h5 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  h5 {
+    font-size: 18px;
+  }
 }
 
 h6 {
@@ -88,6 +116,12 @@ body {
   min-height: 100vh;
   color: white;
   background-color: #131119;
+}
+
+@media (min-width: 1280px) {
+  .only-mb {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

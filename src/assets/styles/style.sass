@@ -10,3 +10,9 @@ body
   min-height: 100vh
   color: white
   background-color: #131119
+
+.only-mb
+  @media (min-width: $desktopMin) // Desktop
+    display: none
+  @media (max-width: $tabletMax) and (min-width: $tabletMin)  // Table
+  @media (max-width: $mobileMax) // Mobile

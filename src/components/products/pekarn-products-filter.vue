@@ -4,7 +4,7 @@
       <li
           v-for="filter in filters"
           :key="filter.id"
-          @click="() => this.$emit('changeType', filter.id)"
+          @click="changeFilter(filter.id)"
           :class="filter.id === this.filter ? 'active' : ''"
       >
         <h3>{{ filter.name }}</h3>
@@ -43,9 +43,19 @@ export default {
   },
 
   props: {
-    filter : {
+    filter: {
       type: String,
       default: null,
+    }
+  },
+
+  methods: {
+    changeFilter(filterId) {
+      if (this.filter === filterId) {
+        this.$router.push({ path: '/products'})
+      } else {
+        this.$router.push({ path: '/products', query: { filter: filterId }})
+      }
     }
   }
 }

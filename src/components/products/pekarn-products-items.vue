@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import {productsList} from "@/components/products/products-data";
+import { productsList } from "@/components/products/products-data";
 
 export default {
   name: "pekarn-products-items",

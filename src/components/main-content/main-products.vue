@@ -4,37 +4,62 @@
   </div>
 
   <div class="products-images">
-    <div class="product">
-      <div class="product-icon">
-        <div class="products-breads"></div>
-      </div>
-      <h3>Хлеба</h3>
-    </div>
-    <div class="product">
-      <div class="product-icon">
-        <div class="products-pies"></div>
-      </div>
-      <h3>Выпечка</h3>
-    </div>
-    <div class="product">
-      <div class="product-icon">
-        <div class="products-conditers"></div>
-      </div>
-      <h3>Кондитерские изделия</h3>
-    </div>
-    <div class="product">
-      <div class="product-icon">
-        <div class="products-gateau"></div>
-      </div>
-      <h3>Пироги</h3>
-    </div>
+    <div
+        class="product"
+        v-for="(navigation, index) in navigationToCatalog"
+        :key="index"
+    >
+      <router-link
+          :to="{ path: '/products', query: { filter: navigation.filter }}"
+          v-slot="{ navigate }"
+          class="product-icon"
+      >
+        <div :class="navigation.className" @click="navigate"></div>
+      </router-link>
 
+      <router-link
+          :to="{ path: '/products', query: { filter: navigation.filter }}"
+          v-slot="{ navigate }"
+      >
+        <h3 @click="navigate">Хлеба</h3>
+      </router-link>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "main-products"
+  name: "main-products",
+
+  data() {
+    return {
+      navigationToCatalog: [
+        {
+          filter: "Bread",
+          className: "products-breads",
+          text: "Хлеба",
+        },
+
+        {
+          filter: "Vipechka",
+          className: "products-pies",
+          text: "Выпечка",
+        },
+
+        {
+          filter: "Konditer",
+          className: "products-conditers",
+          text: "Кондитерские <br class=\"only-mb\"/>изделия",
+        },
+
+        {
+          filter: "Pirogi",
+          className: "products-gateau",
+          text: "Пироги",
+        }
+      ]
+    }
+  },
 }
 </script>
 
@@ -64,6 +89,7 @@ export default {
     width: 100%
     text-align: center
     gap: 30px
+
     .product-icon
       width: 230px
       height: 230px
