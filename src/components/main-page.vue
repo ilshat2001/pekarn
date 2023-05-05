@@ -33,7 +33,7 @@ export default {
   top: -100px
 
   .content
-    height: 100vh
+    min-height: 100vh
     display: flex
     flex-direction: column
     align-items: center
