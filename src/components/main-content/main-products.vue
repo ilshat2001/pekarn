@@ -30,7 +30,6 @@
 <script>
 export default {
   name: "main-products",
-
   data() {
     return {
       navigationToCatalog: [
