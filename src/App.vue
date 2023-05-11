@@ -1,6 +1,21 @@
 <template>
-  <div class="front" id="front">
-    <baker-header-nav/>
+  <baker-header-burger-menu
+      v-if="isActiveBurgerMenu"
+      @closeBurger="isActiveBurgerMenu = false"
+  />
+
+  <div
+      class="front"
+      id="front"
+      :class="{
+        'active': isActiveBurgerMenu,
+      }"
+  >
+    <baker-header-nav
+        :isBurgerMenuActive="isActiveBurgerMenu"
+        @burgerClick="handleBurgerMenu"
+        class="header"
+    />
     <router-view class="front-content"/>
   </div>
 
@@ -11,11 +26,28 @@
 
 <script>
 import bakerHeaderNav from "@/components/header/baker-header-nav";
+import bakerHeaderBurgerMenu from "@/components/header/baker-header-burger-menu";
 
 export default {
   name: 'App',
+
   components: {
-    bakerHeaderNav
+    bakerHeaderNav,
+    bakerHeaderBurgerMenu
+  },
+
+  data() {
+    return {
+      isActiveBurgerMenu: false,
+    }
+  },
+
+  methods: {
+    handleBurgerMenu() {
+      this.isActiveBurgerMenu = !this.isActiveBurgerMenu
+
+      document.querySelector('#front').style.overflow = 'hidden'
+    },
   },
 }
 </script>
@@ -26,7 +58,7 @@ export default {
     perspective: 300px
     height: 100vh
     overflow: hidden
-    overflow-y: auto
+    overflow-y: scroll
 
     .front
       z-index: 999
@@ -36,6 +68,7 @@ export default {
       display: flex
       flex-direction: column
       align-items: center
+      top: 0
 
       .front-content
         width: 100%
@@ -45,6 +78,7 @@ export default {
       position: absolute
       height: 100vh
       width: 100%
+      top: 0
 
       &.parallax-deep1
         transform: translateZ(-60px) scale(1.21)
