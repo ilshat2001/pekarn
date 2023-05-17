@@ -110,6 +110,7 @@ export default {
       width: 40px
       height: 24px
       transition: all 0.6s ease 0s
+      color: $ren
 
       @media (min-width: $desktopMin) // Desktop
         display: none
@@ -125,8 +126,9 @@ export default {
         position: absolute
         height: 2px
         width: 100%
-        background-color: white
+        background-color: $ren
         transition: all 0.6s ease 0s
+
 
       &:before
         top: 0
@@ -138,7 +140,7 @@ export default {
         height: 2px
         width: 100%
         transform: scale(1)
-        background-color: white
+        background-color: $ren
 
       &.active
         &:before
