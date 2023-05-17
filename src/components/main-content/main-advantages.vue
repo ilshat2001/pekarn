@@ -1,10 +1,11 @@
 <template>
   <div class="main-advantages">
     <div class="advantage-item">
-      <h1>Наши преимущества</h1>
+      <h1 class="title">Наши преимущества</h1>
 
       <div class="advantage-item-content">
         <div class="advantages-image"></div>
+
         <div class="advantages-text">
           <div class="advantage"
                v-for="advantage in advantagesList"
@@ -66,6 +67,9 @@ export default {
     gap: 100px
     color: #FEC262
 
+    .title
+      text-align: center
+
     .advantage-item-content
       display: flex
       gap: 50px
@@ -73,7 +77,7 @@ export default {
       @media (min-width: $desktopMin) // Desktop
 
       @media (max-width: $tabletMax) and (min-width: $tabletMin)  // Table
-        align-items: center
+        flex-direction: column
 
       @media (max-width: $mobileMax) // Mobile
         flex-direction: column
@@ -82,14 +86,14 @@ export default {
         background-image: url("/src/assets/images/advantage-image.jpg")
         +background-image-settings()
         display: flex
+        +border-radius(50px)
 
         @media (min-width: $desktopMin) // Desktop
           width: 400px
-          height: 100%
 
         @media (max-width: $tabletMax) and (min-width: $tabletMin)  // Table
-          width: 300px
-          height: 60%
+          width: 100%
+          padding-top: 100%
 
         @media (max-width: $mobileMax) // Mobile
           width: 100%
