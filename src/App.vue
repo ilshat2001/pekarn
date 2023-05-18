@@ -4,6 +4,11 @@
       @closeBurger="isActiveBurgerMenu = false"
   />
 
+  <modal-send-mail
+      v-if="isShownModal"
+      @closeModal="isShownModal = false"
+  />
+
   <div
       class="front"
       id="front"
@@ -16,7 +21,11 @@
         @burgerClick="handleBurgerMenu"
         class="header"
     />
-    <router-view class="front-content"/>
+
+    <router-view
+        class="front-content"
+        @openModal="isShownModal = true"
+    />
   </div>
 
   <div class="parallax-deep parallax-deep1"></div>
@@ -27,18 +36,22 @@
 <script>
 import bakerHeaderNav from "@/components/header/baker-header-nav";
 import bakerHeaderBurgerMenu from "@/components/header/baker-header-burger-menu";
+import modalSendMail from "@/components/modalSendMail/modalSendMail";
 
 export default {
   name: 'App',
 
   components: {
     bakerHeaderNav,
-    bakerHeaderBurgerMenu
+    bakerHeaderBurgerMenu,
+    modalSendMail,
   },
 
   data() {
     return {
       isActiveBurgerMenu: false,
+
+      isShownModal: false,
     }
   },
 

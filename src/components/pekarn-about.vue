@@ -23,6 +23,52 @@
       </div>
     </section>
 
+    <form ref="form" @submit.prevent="handleClick">
+      <h1 class="title">Обратная связь</h1>
+
+      <div class="inputs">
+        <div class="input">
+          <h3 class="title">Имя</h3>
+
+          <input type="text" name="user_name" class="js-form-clear">
+        </div>
+
+        <div class="input">
+          <h3 class="title">Почта</h3>
+
+          <input type="email" name="user_email" class="js-form-clear">
+        </div>
+
+        <div class="input">
+          <h3 class="title">Сообщение</h3>
+
+          <textarea name="message" class="js-form-clear"></textarea>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="input-wrapper">
+          <input type="submit" value="Отправить" :disabled="loading">
+
+          <div v-if="loading" class="loading">
+            <div class="round"></div>
+          </div>
+        </div>
+
+        <div v-show="error" class="error-message">
+          <h6 style="color: red">Пожалуйста, попробуйте позже</h6>
+        </div>
+
+        <div v-show="success" class="success-message">
+          <h6 style="color: green">Письмо успешно отправлено</h6>
+        </div>
+
+        <div v-show="emptyWarning" class="success-message">
+          <h6 style="color: orange">Заполните все поля</h6>
+        </div>
+      </div>
+    </form>
+
     <div class="about-contacts">
       <h1>Контакты</h1>
 
@@ -40,24 +86,6 @@
             <a href="tel:+78435148214">+7 (843) 514‒82‒14</a>
           </h3>
         </div>
-      </div>
-
-      <div class="form">
-        <form ref="form" @submit.prevent="sendEmail">
-          <h3> <label>Имя</label> </h3>
-
-          <input type="text" name="user_name">
-
-          <h3> <label>Почта</label> </h3>
-
-          <input type="email" name="user_email">
-
-          <h3> <label>Сообщение</label> </h3>
-
-          <textarea name="message"></textarea>
-
-          <input type="submit" value="Отправить">
-        </form>
       </div>
 
       <div class="map">
@@ -80,27 +108,93 @@ export default {
 
   data() {
     return {
-      serviceId: 'service_0wrjrqz',
-      templateId: 'template_u1s6hp5',
-      publicKey: 'TTrDFJtbkOExJUmFS',
+      // serviceId: 'service_0wrjrqz',
+      // templateId: 'template_u1s6hp5',
+      // publicKey: 'TTrDFJtbkOExJUmFS',
+
+      serviceId: 'service_njm14vp',
+      templateId: 'template_pwnhmmo',
+      publicKey: 'XrDXmTA3UlYRq2vXg',
+
+      error: false,
+      success: false,
+
+      loading: false,
+
+      emptyWarning: false,
     }
   },
 
   methods: {
-    sendEmail() {
-      emailJS.sendForm(this.serviceId, this.templateId, this.$refs.form, this.publicKey)
+    async handleClick() {
+      this.error = false
+      this.success = false
+      this.emptyWarning = false
 
-          .then((result) => {
+      const inputsArray = Array.from(this.$el.getElementsByClassName('js-form-clear'))
+      if (inputsArray.every(input => input.value !== '')) {
+        this.loading = true
+
+        await this.sendMail()
+      } else {
+        this.emptyWarning = true
+      }
+    },
+
+    async sendMail() {
+      emailJS.sendForm(
+          this.serviceId,
+          this.templateId,
+          this.$refs.form,
+          this.publicKey
+      ).then(
+          (result) => {
             console.log('SUCCESS!', result.text);
-          }, (error) => {
+
+            this.clearForm()
+
+            this.success = true
+            this.loading = false
+          },
+          (error) => {
             console.log('FAILED...', error.text);
+
+            this.error = true
+            this.loading = false
           });
+    },
+
+    clearForm() {
+      const inputsArray = Array.from(this.$el.getElementsByClassName('js-form-clear'))
+
+      inputsArray.forEach(input => input.value = '')
     },
   },
 }
 </script>
 
 <style scoped lang="sass">
+@-webkit-keyframes load8
+  0%
+    -webkit-transform: rotate(0deg)
+    transform: rotate(0deg)
+
+  100%
+    -webkit-transform: rotate(360deg)
+    transform: rotate(360deg)
+
+
+@keyframes load8
+  0%
+    -webkit-transform: rotate(0deg)
+    transform: rotate(0deg)
+
+  100%
+    -webkit-transform: rotate(360deg)
+    transform: rotate(360deg)
+
+
+
 .about-page
   background-color: $darkblue
   top: -100px
@@ -176,7 +270,106 @@ export default {
       .title
         text-align: center
 
-      .text
+  form
+    color: black
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 50px
+    padding: 20px
+    +border-radius(15px)
+    border: 3px solid $ren
+    width: 100%
+
+    .title
+      text-align: center
+      color: $ren
+
+    .inputs
+      display: flex
+      flex-direction: column
+      align-items: center
+      gap: 30px
+      width: 100%
+
+      .input
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 15px
+        width: 100%
+
+        input
+          padding: 10px 30px
+          background: #ccc
+          border: 0 none
+          -webkit-border-radius: 5px
+          border-radius: 5px
+          width: 50%
+          font-family: "Roboto Mono" , sans-serif
+          font-weight: 400
+          font-size: 20px
+
+        textarea
+          padding: 10px 30px
+          background: #ccc
+          border: 0 none
+          -webkit-border-radius: 5px
+          border-radius: 5px
+          resize: vertical
+          width: 50%
+          font-family: "Roboto Mono" , sans-serif
+          font-weight: 400
+          font-size: 20px
+
+    .footer
+      display: flex
+      flex-direction: column
+      gap: 10px
+      align-items: center
+
+      .input-wrapper
+        position: relative
+        display: flex
+
+        input
+          background-color: transparent
+          border: 2px solid $ren
+          +border-radius(10px)
+          padding: 10px 20px
+          color: $ren
+          cursor: pointer
+          font-size: 30px
+          display: flex
+
+          &:hover
+            background-color: rgba(254, 194, 98, 0.1)
+
+        .loading
+          display: flex
+          align-items: center
+          justify-content: center
+          width: 100%
+          height: 100%
+          position: absolute
+          top: 0
+          left: 0
+          background-color: rgba(255, 192, 203, 0.13)
+          +border-radius(10px)
+
+          .round
+            width: 30px
+            height: 30px
+            +border-radius(50%)
+            border-top: 5px solid rgba(255, 255, 255, 0.2)
+            border-right: 5px solid rgba(255, 255, 255, 0.2)
+            border-bottom: 5px solid rgba(255, 255, 255, 0.2)
+            border-left: 5px solid #ffffff
+            -webkit-transform: translateZ(0)
+            -ms-transform: translateZ(0)
+            transform: translateZ(0)
+            -webkit-animation: load8 1.1s infinite linear
+            animation: load8 1.1s infinite linear
 
   .about-contacts
     width: 100%
@@ -230,28 +423,4 @@ export default {
       .frame
         width: 100%
         height: 100%
-
-  .form
-    color: black
-    display: flex
-    flex-direction: column
-    padding: 20px
-    +border-radius(15px)
-    border: 3px solid $ren
-label
-  color: $ren
-input
-  padding: 5px 15px
-  background: #ccc
-  border: 0 none
-  cursor: pointer
-  -webkit-border-radius: 5px
-  border-radius: 5px
-textarea
-  padding: 5px 15px
-  background: #ccc
-  border: 0 none
-  cursor: pointer
-  -webkit-border-radius: 5px
-  border-radius: 5px
 </style>

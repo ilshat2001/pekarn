@@ -27,6 +27,8 @@
         <h5>•поддержание порядка на рабочем месте;</h5>
 
         <h5>•работа со специализированным оборудованием и инвентарём.</h5>
+
+        <button @click="openModal">Откликнуться</button>
       </div>
     </div>
 
@@ -57,6 +59,8 @@
         <h5>•работа со специализированным оборудованием и инвентарём;</h5>
 
         <h5>•желание работать и развиваться.</h5>
+
+        <button @click="openModal">Откликнуться</button>
       </div>
     </div>
 
@@ -85,6 +89,8 @@
         <h5>•Поддержание порядка на рабочем месте;</h5>
 
         <h5>•Желание работать с людьми.</h5>
+
+        <button @click="openModal">Откликнуться</button>
       </div>
     </div>
 
@@ -111,6 +117,8 @@
         <h5>•приготовление служебного обеда;</h5>
 
         <h5>•мытьё посуды.</h5>
+
+        <button @click="openModal">Откликнуться</button>
       </div>
     </div>
   </div>
@@ -119,6 +127,12 @@
 <script>
 export default {
   name: "pekarn-vacancies",
+
+  methods: {
+    openModal() {
+      this.$emit('openModal')
+    },
+  },
 }
 </script>
 
@@ -199,4 +213,18 @@ export default {
       .title
         text-align: center
         padding-bottom: 20px
+
+      button
+        padding: 10px 20px
+        background-color: transparent
+        border: 2px solid $ren
+        +border-radius(10px)
+        font-family: "Roboto Mono" , sans-serif
+        font-weight: 400
+        font-size: 25px
+        margin-top: 40px
+        cursor: pointer
+
+        &:hover
+          background-color: rgba(254, 194, 98, 0.1)
 </style>
