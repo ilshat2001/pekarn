@@ -35,38 +35,358 @@
   },
 
   {
-    "imageName": "chiz.jpg",
-    "name": "Чизкейк",
-    "description": "Блюдо европейской и американской кухни, представляющее собой сыросодержащий десерт от творожной запеканки до суфле.",
-    "type": "Konditer"
-  },
-
-  {
-    "imageName": "kartkurt.jpg",
-    "name": "С картошкой и курицей",
-    "description": "Ароматный, сытный, вкусный, для всей семьи! Пирог с картошкой и курицей в духовке обязательно всем понравится.",
+    "imageName": "qiwikokos.jpg",
+    "name": "Пирог киви-кокос",
+    "description": "Мягкое и воздушное тесто, украшенное яркими кусочками киви и кокоса!",
     "type": "Pirogi"
   },
 
   {
-    "imageName": "korica.jpg",
-    "name": "Булочка с корицей",
-    "description": "Мягкие и ароматные витые булочки с корицей, покрытые липкой сахарной глазурью.",
-    "type": "Konditer"
-  },
-
-  {
-    "imageName": "mak.jpg",
+    "imageName": "bulochkamak.jpg",
     "name": "Булочка с маком",
-    "description": "Потрясающе нежные дрожжевые булочки, с маком и сахаром..",
+    "description": "Потрясающе нежные дрожжевые булочки, с маком и сахаром",
     "type": "Konditer"
   },
 
   {
-    "imageName": "qiwi.jpg",
-    "name": "Пирог киви",
-    "description": "Пирог с киви — простая и очень вкусная домашняя выпечка. Мягкое и воздушное тесто, украшенное яркими кусочками киви — вот что это за пирог!",
-    "type": "Pirogi"
-  }
+    "imageName": "chak.jpg",
+    "name": "Чак-чак",
+    "description": "Потрясающе нежные дрожжевые булочки, с маком и сахаром",
+    "type": "Konditer"
+  },
 
+  {
+    "imageName": "cinnabon.jpg",
+    "name": "Синнабон",
+    "description": "Булочка с корицей и сливочным сыром",
+    "type": "Konditer"
+  },
+
+  {
+    "imageName": "keks.jpg",
+    "name": "Кексы",
+    "description": " ",
+    "type": "Konditer"
+  },
+
+  {
+    "imageName": "konditerka.jpg",
+    "name": "konditerka",
+    "description": " ",
+    "type": "Konditer"
+  },
+
+  {
+    "imageName": "konditerka2.jpg",
+    "name": "konditerka2",
+    "description": " ",
+    "type": "Konditer"
+  },
+
+  {
+    "imageName": "markovniy.jpg",
+    "name": "Морковный торт",
+    "description": "Торт, где коржи глазируются кремом из сливочного сыра и  морковью",
+    "type": "Konditer"
+  },
+
+  {
+    "imageName": "napoleon.jpg",
+    "name": "Наполеон",
+    "description": "Торт из слоеного теста с заварным кремом",
+    "type": "Konditer"
+  },
+
+  {
+    "imageName": "rulet.jpg",
+    "name": "rulet",
+    "description": " ",
+    "type": "Konditer"
+  },
+
+  {
+    "imageName": "rulet2.jpg",
+    "name": "rulet2",
+    "description": " ",
+    "type": "Konditer"
+  },
+
+  {
+    "imageName": "snikers.jpg",
+    "name": "snikers",
+    "description": " ",
+    "type": "Konditer"
+  },
+
+  {
+    "imageName": "snikers2.jpg",
+    "name": "snikers2",
+    "description": " ",
+    "type": "Konditer"
+  },
+
+  {
+    "imageName": "sochni.jpg",
+    "name": "Сочни",
+    "description": "Сочни из песочного теста с творожным кремом",
+    "type": "Konditer"
+  },
+
+  {
+    "imageName": "sufle.jpg",
+    "name": "Пирожное суфле",
+    "description": "Лёгкое пирожное из взбитых белков с сахаром",
+    "type": "Konditer"
+  },
+
+  {
+    "imageName": "tort.jpg",
+    "name": "Синнабон",
+    "description": " ",
+    "type": "Konditer"
+  },
+
+  {
+    "imageName": "tort2.jpg",
+    "name": "Синнабон",
+    "description": " ",
+    "type": "Konditer"
+  },
+
+  {
+    "imageName": "tort3.jpg",
+    "name": "Синнабон",
+    "description": " ",
+    "type": "Konditer"
+  },
+
+  {
+    "imageName": "tort4.jpg",
+    "name": "Синнабон",
+    "description": " ",
+    "type": "Konditer"
+  },
+
+  {
+    "imageName": "tort5.jpg",
+    "name": "Синнабон",
+    "description": " ",
+    "type": "Konditer"
+  },
+
+  {
+    "imageName": "tort6.jpg",
+    "name": "tort6",
+    "description": " ",
+    "type": "Konditer"
+  },
+
+  {
+    "imageName": "tort7.jpg",
+    "name": "tort7",
+    "description": " ",
+    "type": "Konditer"
+  },
+
+  {
+    "imageName": "tortsnikers.jpg",
+    "name": "Торт сникерс",
+    "description": "Замечательный вкусный торт, который действительно по вкусу напоминает батончик Сникерс",
+    "type": "Konditer"
+  },
+
+  {
+    "imageName": "tvorog.jpg",
+    "name": "Творожные кольца",
+    "description": "Кольца из заварного теста с творожным кремом",
+    "type": "Konditer"
+  },
+
+  {
+    "imageName": "bekken.jpg",
+    "name": "Беккен",
+    "description": "Пирожок из дрожжевого теста с капустой",
+    "type": "Vipechka"
+  },
+
+  {
+    "imageName": "elesh.jpg",
+    "name": "Элеш",
+    "description": "Пирожок из бездрожжевого теста с курицей и картофелем",
+    "type": "Vipechka"
+  },
+
+  {
+    "imageName": "fish.jpg",
+    "name": "Пирожок с рыбой",
+    "description": "Пирожок из дрожжевого теста с горбушей",
+    "type": "Vipechka"
+  },
+
+  {
+    "imageName": "hachapury.jpg",
+    "name": "Хачапури",
+    "description": "Булка из бездрожжевого теста с начинкой из сыра",
+    "type": "Vipechka"
+  },
+
+  {
+    "imageName": "kalcone.jpg",
+    "name": "Кальцоне",
+    "description": "Закрытая форма пиццы в виде полумесяца",
+    "type": "Vipechka"
+  },
+
+  {
+    "imageName": "kurnik.jpg",
+    "name": "Курник",
+    "description": "Из слоеного теста с курицей и картофелем и сырной шляпки",
+    "type": "Vipechka"
+  },
+
+  {
+    "imageName": "peremech.jpg",
+    "name": "Перемяч",
+    "description": "Пирожок из дрожжевого теста обжаренное в полуфритюре с говядиной и картофелем ",
+    "type": "Vipechka"
+  },
+
+  {
+    "imageName": "pirozhok.jpg",
+    "name": "Пирожок",
+    "description": " ",
+    "type": "Vipechka"
+  },
+
+  {
+    "imageName": "pirozhokvishnya.jpg",
+    "name": "Пирожок с вишней",
+    "description": "Пирожок из сдобного теста с вишней",
+    "type": "Vipechka"
+  },
+
+  {
+    "imageName": "shashlik.jpg",
+    "name": "Шашлычок",
+    "description": "Пирожок из дрожжевого теста с куриным филе и зеленью",
+    "type": "Vipechka"
+  },
+
+  {
+    "imageName": "sosiska.jpg",
+    "name": "Сосиска в тесте",
+    "description": "Сосиска внутри дрожжевого теста",
+    "type": "Vipechka"
+  },
+
+  {
+    "imageName": "tart.jpg",
+    "name": "Тарт шпинатный",
+    "description": "Шпинатный тарт с горбушей в сметанном соусе под сырной шляпкой",
+    "type": "Vipechka"
+  },
+
+  {
+    "imageName": "triangle.jpg",
+    "name": "Треугольник с курицей",
+    "description": "Пирожок из бездрожжевого теста с курицей и картофелем",
+    "type": "Vipechka"
+  },
+  {
+    "imageName": "trianglegov.jpg",
+    "name": "Треугольник с говядиной",
+    "description": "Пирожок из дрожжевого теста с говядиной и картофелем",
+    "type": "Vipechka"
+  },
+
+  {
+    "imageName": "vakbalesh.jpg",
+    "name": "Вак балиш",
+    "description": "Пирожки из пресного теста с начинкой с говядиной и картофелем",
+    "type": "Vipechka"
+  },
+
+  {
+    "imageName": "yablochny.jpg",
+    "name": "Пирожок с яблоком",
+    "description": "Пирожок из дрожевого теста с яблоком",
+    "type": "Vipechka"
+  },
+
+  {
+    "imageName": "zelluk.jpg",
+    "name": "Пирожок с зеленым луком и яйцом",
+    "description": "Пирожок из дрожжевого теста с зеленым луком и яйцом",
+    "type": "Vipechka"
+  },
+
+  {
+    "imageName": "pesochny.jpg",
+    "name": "Песочный в ассортименте",
+    "description": "С лимоном, с абрекосом, с конфитюром, с киви, с черемухой, с клубникой, с малиной, с инжиром, с манго, с орехом, банан-клубника, с фисташкой, с фейхоа, с черникой, рафаель ",
+    "type": "Pirogi"
+  },
+
+  {
+    "imageName": "pirog.jpg",
+    "name": "Пирог с вишней",
+    "description": " ",
+    "type": "Pirogi"
+  },
+
+  {
+    "imageName": "pirog2.jpg",
+    "name": "pirog2",
+    "description": " ",
+    "type": "Pirogi"
+  },
+
+  {
+    "imageName": "pirog3.jpg",
+    "name": "pirog3",
+    "description": " ",
+    "type": "Pirogi"
+  },
+
+  {
+    "imageName": "pirogfish.jpg",
+    "name": "Пирог рыба-саго",
+    "description": "Пирог из дрожжевого теста с горбушей и саго",
+    "type": "Pirogi"
+  },
+
+  {
+    "imageName": "pirogmyaso.jpg",
+    "name": "Пирог с мясом",
+    "description": " ",
+    "type": "Pirogi"
+  },
+
+  {
+    "imageName": "smetannik.jpg",
+    "name": "Сметанник",
+    "description": "Пирог выпеченный цельным коржем из теста, в которое добавлена сметана",
+    "type": "Pirogi"
+  },
+
+  {
+    "imageName": "baton.jpg",
+    "name": "Батон",
+    "description": "Хлебобулочное изделие продолговатой формы, выпекаемое из пшеничной муки",
+    "type": "Bread"
+  },
+
+  {
+    "imageName": "hleb.jpg",
+    "name": "Хлеб",
+    "description": "Потрясающе нежные дрожжевые булочки, с маком и сахаром",
+    "type": "Bread"
+  },
+
+  {
+    "imageName": "derevensky.jpg",
+    "name": "Деревенский",
+    "description": "Хлеб из смеси ржаной и пшеничной муки с тмином",
+    "type": "Bread"
+  }
 ]
