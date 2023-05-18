@@ -40,14 +40,24 @@
             <a href="tel:+78435148214">+7 (843) 514‒82‒14</a>
           </h3>
         </div>
+      </div>
 
-        <div class="about-number">
-          <div class="about-number-logo"></div>
+      <div class="form">
+        <form ref="form" @submit.prevent="sendEmail">
+          <h3> <label>Имя</label> </h3>
 
-          <h3 class="text">
-            <a href="tel:+79179114989">+7‒917‒911‒49‒89</a>
-          </h3>
-        </div>
+          <input type="text" name="user_name">
+
+          <h3> <label>Почта</label> </h3>
+
+          <input type="email" name="user_email">
+
+          <h3> <label>Сообщение</label> </h3>
+
+          <textarea name="message"></textarea>
+
+          <input type="submit" value="Отправить">
+        </form>
       </div>
 
       <div class="map">
@@ -59,23 +69,6 @@
       </div>
     </div>
 
-    <div class="form">
-      <form ref="form" @submit.prevent="sendEmail">
-        <label>Name</label>
-
-        <input type="text" name="user_name">
-
-        <label>Email</label>
-
-        <input type="email" name="user_email">
-
-        <label>Message</label>
-
-        <textarea name="message"></textarea>
-
-        <input type="submit" value="Send">
-      </form>
-    </div>
   </div>
 </template>
 
@@ -96,6 +89,7 @@ export default {
   methods: {
     sendEmail() {
       emailJS.sendForm(this.serviceId, this.templateId, this.$refs.form, this.publicKey)
+
           .then((result) => {
             console.log('SUCCESS!', result.text);
           }, (error) => {
@@ -238,5 +232,26 @@ export default {
         height: 100%
 
   .form
-    color: red
+    color: black
+    display: flex
+    flex-direction: column
+    padding: 20px
+    +border-radius(15px)
+    border: 3px solid $ren
+label
+  color: $ren
+input
+  padding: 5px 15px
+  background: #ccc
+  border: 0 none
+  cursor: pointer
+  -webkit-border-radius: 5px
+  border-radius: 5px
+textarea
+  padding: 5px 15px
+  background: #ccc
+  border: 0 none
+  cursor: pointer
+  -webkit-border-radius: 5px
+  border-radius: 5px
 </style>
