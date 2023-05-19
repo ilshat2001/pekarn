@@ -200,6 +200,8 @@ export default {
     .text
       flex: 1
       width: 100%
+      display: flex
+      flex-direction: column
 
       @media (min-width: $desktopMin) // Desktop
         padding: 32px
@@ -221,7 +223,7 @@ export default {
         +border-radius(10px)
         font-family: "Roboto Mono" , sans-serif
         font-weight: 400
-        font-size: 25px
+        font-size: 20px
         margin-top: 40px
         cursor: pointer
 

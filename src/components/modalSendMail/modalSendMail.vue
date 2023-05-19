@@ -164,14 +164,22 @@ export default {
 
   .window
     width: 80%
-    height: 600px
-    min-height: 70%
+    padding: 60px 0 30px
     background-color: $darkblue
     border: 3px solid $ren
     +border-radius(40px)
     display: flex
     align-items: center
     justify-content: center
+
+    @media (min-width: $desktopMin) // Desktop
+      +border-radius(40px)
+
+    @media (max-width: $tabletMax) and (min-width: $tabletMin)  // Table
+      +border-radius(20px)
+
+    @media (max-width: $mobileMax) // Mobile
+      +border-radius(16px)
 
     form
       color: black
@@ -185,8 +193,8 @@ export default {
 
       .close-button
         position: absolute
-        top: 0
-        right: 50px
+        top: -30px
+        right: 20px
         display: flex
         align-items: center
         justify-content: center
@@ -232,16 +240,36 @@ export default {
           gap: 5px
           width: 100%
 
+          .title
+            text-align: left
+
+            @media (min-width: $desktopMin) // Desktop
+              width: 50%
+
+            @media (max-width: $tabletMax) and (min-width: $tabletMin)  // Table
+              width: 70%
+
+            @media (max-width: $mobileMax) // Mobile
+              width: 90%
+
           input
             padding: 5px 30px
             background: #ccc
             border: 0 none
             -webkit-border-radius: 5px
             border-radius: 5px
-            width: 50%
             font-family: "Roboto Mono" , sans-serif
             font-weight: 400
             font-size: 20px
+
+            @media (min-width: $desktopMin) // Desktop
+              width: 50%
+
+            @media (max-width: $tabletMax) and (min-width: $tabletMin)  // Table
+              width: 70%
+
+            @media (max-width: $mobileMax) // Mobile
+              width: 90%
 
           textarea
             padding: 10px 30px
@@ -250,10 +278,18 @@ export default {
             -webkit-border-radius: 5px
             border-radius: 5px
             resize: none
-            width: 50%
             font-family: "Roboto Mono" , sans-serif
             font-weight: 400
             font-size: 20px
+
+            @media (min-width: $desktopMin) // Desktop
+              width: 50%
+
+            @media (max-width: $tabletMax) and (min-width: $tabletMin)  // Table
+              width: 70%
+
+            @media (max-width: $mobileMax) // Mobile
+              width: 90%
 
       .footer
         display: flex
