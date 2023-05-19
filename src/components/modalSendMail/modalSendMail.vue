@@ -166,7 +166,7 @@ export default {
     width: 80%
     height: 600px
     min-height: 70%
-    background-color: black
+    background-color: $darkblue
     border: 3px solid $ren
     +border-radius(40px)
     display: flex

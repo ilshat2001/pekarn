@@ -108,13 +108,13 @@ export default {
 
   data() {
     return {
-      // serviceId: 'service_0wrjrqz',
-      // templateId: 'template_u1s6hp5',
-      // publicKey: 'TTrDFJtbkOExJUmFS',
+       serviceId: 'service_0wrjrqz',
+       templateId: 'template_u1s6hp',
+       publicKey: 'TTrDFJtbkOExJUmFS',
 
-      serviceId: 'service_njm14vp',
-      templateId: 'template_pwnhmmo',
-      publicKey: 'XrDXmTA3UlYRq2vXg',
+      //serviceId: 'service_njm14vp',
+      //templateId: 'template_pwnhmmo',
+      //publicKey: 'XrDXmTA3UlYRq2vXg',
 
       error: false,
       success: false,

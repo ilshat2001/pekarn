@@ -1,38 +1,4 @@
 [
-  {
-    "imageName": "vegipan.jpg",
-    "name": "Вегипан",
-    "description": "Это хлеб с тупым названием",
-    "type": "Bread"
-  },
-
-  {
-    "imageName": "potatoBread.jpg",
-    "name": "Картофельный хлеб",
-    "description": "Хлеб из картошки",
-    "type": "Bread"
-  },
-
-  {
-    "imageName": "1.jpg",
-    "name": "Хлеб №1",
-    "description": "Первый хлеб",
-    "type": "Bread"
-  },
-
-  {
-    "imageName": "2.jpg",
-    "name": "Хлеб №2",
-    "description": "Второй хлеб",
-    "type": "Bread"
-  },
-
-  {
-    "imageName": "3.jpg",
-    "name": "Хлеб №3",
-    "description": "Третий хлеб",
-    "type": "Bread"
-  },
 
   {
     "imageName": "qiwikokos.jpg",
@@ -44,14 +10,14 @@
   {
     "imageName": "bulochkamak.jpg",
     "name": "Булочка с маком",
-    "description": "Потрясающе нежные дрожжевые булочки, с маком и сахаром",
+    "description": "Дрожжевые булочки, с маком и сахаром",
     "type": "Konditer"
   },
 
   {
     "imageName": "chak.jpg",
     "name": "Чак-чак",
-    "description": "Потрясающе нежные дрожжевые булочки, с маком и сахаром",
+    "description": "Печенье из обжаренных во фритюре кусочков теста, перемешанных с медовым сиропом",
     "type": "Konditer"
   },
 
@@ -64,22 +30,22 @@
 
   {
     "imageName": "keks.jpg",
-    "name": "Кексы",
-    "description": " ",
+    "name": "Печенье кокосанка",
+    "description": "Кокосовое печенье без муки и без масла",
     "type": "Konditer"
   },
 
   {
     "imageName": "konditerka.jpg",
-    "name": "konditerka",
-    "description": " ",
+    "name": "Чизкейк",
+    "description": "Десерт из творожной запеканки",
     "type": "Konditer"
   },
 
   {
     "imageName": "konditerka2.jpg",
-    "name": "konditerka2",
-    "description": " ",
+    "name": "Тарт воздушный",
+    "description": "Тарт с яблоками",
     "type": "Konditer"
   },
 
@@ -99,29 +65,29 @@
 
   {
     "imageName": "rulet.jpg",
-    "name": "rulet",
-    "description": " ",
+    "name": "Меренговый рулет",
+    "description": "Десерт со сливочно творожным  вкусом",
     "type": "Konditer"
   },
 
   {
     "imageName": "rulet2.jpg",
-    "name": "rulet2",
-    "description": " ",
+    "name": "Рулет клубничный",
+    "description": "Рулет из бисквитного теста с начинкой из клубники",
     "type": "Konditer"
   },
 
   {
     "imageName": "snikers.jpg",
-    "name": "snikers",
-    "description": " ",
+    "name": "Бенто торт - Сникерс",
+    "description": "Маленький замечательный вкусный торт, который действительно по вкусу напоминает батончик Сникерс",
     "type": "Konditer"
   },
 
   {
     "imageName": "snikers2.jpg",
-    "name": "snikers2",
-    "description": " ",
+    "name": "Мини тарт - Сникерс",
+    "description": "Маленький замечательный вкусный тарт, который действительно по вкусу напоминает батончик Сникерс",
     "type": "Konditer"
   },
 
@@ -141,50 +107,43 @@
 
   {
     "imageName": "tort.jpg",
-    "name": "Синнабон",
-    "description": " ",
+    "name": "Коффейный торт",
+    "description": "Бисквитный торт приправленный из кофе",
     "type": "Konditer"
   },
 
   {
     "imageName": "tort2.jpg",
-    "name": "Синнабон",
-    "description": " ",
+    "name": "Лимонный тарт",
+    "description": "Тарт из песочного теста и лимонным кремом",
     "type": "Konditer"
   },
 
   {
     "imageName": "tort3.jpg",
-    "name": "Синнабон",
-    "description": " ",
+    "name": "Медовый торт",
+    "description": "Торт с мягкими коржами и сметанным кремом",
     "type": "Konditer"
   },
 
   {
     "imageName": "tort4.jpg",
-    "name": "Синнабон",
-    "description": " ",
-    "type": "Konditer"
-  },
-
-  {
-    "imageName": "tort5.jpg",
-    "name": "Синнабон",
-    "description": " ",
+    "name": "Лесной торт",
+    "description": "Нежный воздушный торт из взбитых сливок и кленовой начинки",
     "type": "Konditer"
   },
 
   {
     "imageName": "tort6.jpg",
-    "name": "tort6",
-    "description": " ",
+    "name": "Торт Черная смородина",
+    "description": "Торт из крем чиза с черной смородиной",
     "type": "Konditer"
   },
 
   {
     "imageName": "tort7.jpg",
-    "name": "tort7",
-    "description": " ",
+    "name": "Тарт Баунти",
+    "description": "Тарт с сочной кокосовой начинкой",
     "type": "Konditer"
   },
 
@@ -253,8 +212,8 @@
 
   {
     "imageName": "pirozhok.jpg",
-    "name": "Пирожок",
-    "description": " ",
+    "name": "Маисовые булочки",
+    "description": "Маисовые булочки с топингом",
     "type": "Vipechka"
   },
 
@@ -330,21 +289,21 @@
   {
     "imageName": "pirog.jpg",
     "name": "Пирог с вишней",
-    "description": " ",
+    "description": "Открытый пирог с вишней",
     "type": "Pirogi"
   },
 
   {
     "imageName": "pirog2.jpg",
-    "name": "pirog2",
-    "description": " ",
+    "name": "С черносливом и грецким орехом",
+    "description": "Пирог из песочного теста с черносливом и грецким орехом со сгущенкой",
     "type": "Pirogi"
   },
 
   {
     "imageName": "pirog3.jpg",
-    "name": "pirog3",
-    "description": " ",
+    "name": "Пирог с брусникой",
+    "description": "Открытый пирог с брусникой",
     "type": "Pirogi"
   },
 
@@ -357,8 +316,8 @@
 
   {
     "imageName": "pirogmyaso.jpg",
-    "name": "Пирог с мясом",
-    "description": " ",
+    "name": "Пирог с капустой и курицей",
+    "description": "Пирог из дрожжевого теста с капустой и курицей",
     "type": "Pirogi"
   },
 
@@ -378,8 +337,8 @@
 
   {
     "imageName": "hleb.jpg",
-    "name": "Хлеб",
-    "description": "Потрясающе нежные дрожжевые булочки, с маком и сахаром",
+    "name": "Сырный пшеничный хлеб",
+    "description": "Хлеб на пшеничной закваске с сыром",
     "type": "Bread"
   },
 
